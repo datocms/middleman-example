@@ -1,0 +1,38 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: $base-body-color;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+ul, ol {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  height: 1px;
+  background-color: $border-color;
+  border: 0;
+  margin: 60px auto;
+}
+
+a {
+  color: $base-body-color;
+  text-decoration: none;
+}

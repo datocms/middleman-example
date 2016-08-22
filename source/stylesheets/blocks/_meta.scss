@@ -1,0 +1,12 @@
+.meta {
+  padding: 10px 0;
+}
+
+.meta__item {
+  list-style-type: none;
+  margin-bottom: 5px;
+
+  strong {
+    color: $light-body-color;
+  }
+}

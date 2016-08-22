@@ -1,0 +1,42 @@
+<% content_for(:head) do %>
+  <%= dato_meta_tags(character) %>
+<% end %>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="grid__cell grid__cell--20">
+      <section class="section section--left">
+        <h2 class="section__title">Characters</h2>
+        <ul class="nav">
+          <% dato.characters.sort_by(&:name).each do |character| %>
+            <li class="nav__item">
+              <%= link_to character.name, "/characters/#{character.slug}.html" %>
+            </li>
+          <% end %>
+        </ul>
+      </section>
+    </div>
+    <div class="grid__cell grid__cell--80">
+      <section class="section">
+        <div class="character">
+          <div class="character__image">
+            <% image_or_missing(character.image) do |image| %>
+              <%= image_tag image.file.width(500).format(:jpg).to_url %>
+            <% end %>
+          </div>
+          <h1 class="character__title"><%= character.name %></h1>
+          <ul class="meta">
+            <li class="meta__item">
+              <strong>Actor:</strong> <%= character.actor_name %>
+            </li>
+            <li class="meta__item">
+              <strong>Number of episodes:</strong> <%= character.episode %>
+          </ul>
+          <div class="character__content">
+            <%= markdown character.description %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

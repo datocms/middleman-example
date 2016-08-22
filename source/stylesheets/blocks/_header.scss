@@ -1,0 +1,60 @@
+.header {
+  background-color: #BFC1B7;
+  background-image: linear-gradient(180deg, rgba(black, 0.1) 30%, rgba(black, 0.5)), image-url('the-office.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.header__inner {
+  max-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.header__inner--internal {
+  max-height: 400px;
+}
+
+.header__content {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.header__title {
+  font-family: "Special elite", Arial, sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+  .header__inner {
+    height: 50vw;
+    justify-content: flex-start;
+    margin-right: 50%
+  }
+
+  .header__content {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 70px;
+  }
+
+  .header__tagline {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .header__title {
+    font-size: 90px;
+  }
+}

@@ -1,0 +1,45 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -25px;
+  justify-content: space-between;
+}
+
+.grid__cell {
+  padding-left: 25px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.grid--center {
+  justify-content: space-around;
+
+  .grid__cell {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .grid {
+    .grid__cell--33 {
+      width: 33%;
+    }
+
+    .grid__cell--80 {
+      width: 80%;
+    }
+
+    .grid__cell--66 {
+      width: 66%;
+    }
+
+    .grid__cell--50 {
+      width: 50%;
+    }
+
+    .grid__cell--20 {
+      width: 20%;
+    }
+  }
+}

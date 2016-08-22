@@ -4,17 +4,15 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Work+Sans:400,600|Special+Elite" %>
+    <%= yield_content :head %>
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
-
-  <body class="<%= page_classes %>">
+  <body>
+    <%= partial "/partials/main-navigation" %>
+    <%= partial "/partials/header" %>
     <%= yield %>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.0.1/color-thief.min.js"></script>
+    <%= javascript_include_tag :all %>
   </body>
 </html>

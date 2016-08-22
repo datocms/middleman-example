@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="wrap">
+    <% if current_page.url != "/" %>
+      <div class="header__inner header__inner--internal">
+    <% else %>
+      <div class="header__inner">
+    <% end %>
+      <div class="header__content">
+        <h1 class="header__title">
+          <%= dato.homepage.site_name %>
+        </h1>
+        <p class="header__tagline">
+          <%= dato.homepage.tag_line %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

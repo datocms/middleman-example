@@ -1,0 +1,15 @@
+<% palette_url = episode.image.present? ? episode.image.file.auto("enhance").palette("json").to_url : "" %>
+<% image_url = episode.image.present? ? episode.image.file.width(500).height(280).fit("crop").auto("enhance").format(:jpg).to_url : "" %>
+
+<% link_to "/episodes/#{episode.slug}.html", class: "episode-preview", "data-preview" => palette_url do %>
+  <div class="episode-preview__image" style="background-image: url('<%= image_url %>')"></div>
+  <div class="episode-preview__meta">
+    <div class="episode-preview__title">
+      <%= episode.title %>
+    </div>
+    <div class="episode-preview__details">
+      <%= episode.season.name %> •
+      Episode <%= episode.episode_number %>
+    </div>
+  </div>
+<% end %>

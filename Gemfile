@@ -1,8 +1,9 @@
-# If you do not have OpenSSL installed, change
-# the following line to use 'http://'
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Middleman Gems
-gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
-gem 'middleman-dato'
+gem "middleman", ">= 4.0.0"
+gem "middleman-livereload"
+gem "middleman-dato"
+gem "middleman-paginate"
+gem "html_truncator", "~>0.2"
+gem "redcarpet"
+gem "pry"

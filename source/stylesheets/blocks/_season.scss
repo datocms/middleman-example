@@ -1,0 +1,32 @@
+.season__image {
+  img {
+    border-radius: 5px;
+  }
+}
+
+.season__title {
+  font-size: 45px;
+}
+
+.season__content {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .season {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .season__image {
+    width: 30%;
+  }
+
+  .season__content {
+    margin-top: 0px;
+    width: 60%;
+  }
+}
+

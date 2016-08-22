@@ -1,0 +1,17 @@
+---
+title: Dundler Mifflin - Characters
+---
+
+<div class="wrap">
+  <section class="section">
+    <h2 class="section__title">Characters</h2>
+
+    <div class="grid grid--center">
+      <% dato.characters.sort_by(&:position).each do |character| %>
+        <div class="grid__cell grid__cell--20">
+          <%= partial "partials/character_preview", locals: { character: character } %>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

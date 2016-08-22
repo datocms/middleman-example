@@ -1,0 +1,13 @@
+.button {
+  text-decoration: none;
+  border: 1px solid $border-color;
+  padding: 0.7em 1.2em;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+}

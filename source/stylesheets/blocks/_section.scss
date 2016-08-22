@@ -1,0 +1,171 @@
+.section {
+  padding: 80px 0;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+
+  .section--left & {
+    text-align: left;
+  }
+}
+
+// .section-characters {
+//   border-bottom: 1px solid #000;
+// }
+
+// .section-latest-episodes {
+//   flex: 0 1 450px;
+//   align-self: auto;
+// }
+
+// .section-description {
+//   flex: 1 1 400px;
+//   align-self: auto;
+// }
+
+// section.section-characters-menu {
+//   flex: 0 1 300px;
+//   align-self: auto;
+//   order: 2;
+//   margin-left: 0;
+// }
+
+// .section-character {
+//   flex: 1 1 400px;
+//   align-self: auto;
+// }
+
+// .section-season__content {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-content: flex-start;
+//   align-items: flex-start;
+// }
+
+// .section-season-image {
+//   flex: 1 1 300px;
+//   align-self: auto;
+// }
+
+// .section-season-meta {
+//   flex: 1 1 400px;
+//   align-self: auto;
+
+//   h2 {
+//     padding-left: 10px;
+//   }
+// }
+
+// .section-episode-image {
+//   flex: 1 1 300px;
+//   align-self: auto;
+//   padding-top: 20px;
+// }
+
+// .section-episode-meta {
+//   flex: 1 1 400px;
+//   align-self: auto;
+//   h2 {
+//     padding-left: 10px;
+//   }
+// }
+
+// .section-character-image {
+//   flex: 1 1 300px;
+//   align-self: auto;
+//   padding-top: 20px;
+// }
+
+// .section-character-meta {
+//   flex: 1 1 400px;
+//   align-self: auto;
+//   h2 {
+//     padding-left: 10px;
+//   }
+// }
+
+// .section-main-content--order {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-content: stretch;
+//   align-items: flex-start;
+// }
+
+// .section-main-content--order__item {
+//   order: 1
+// }
+
+
+// @media screen and (min-width: 500px) {
+//   .section-characters__content {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     align-content: flex-start;
+//     align-items: flex-start;
+//   }
+
+//   .section-main-content {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: flex-start;
+//     align-content: stretch;
+//     align-items: flex-start;
+//   }
+
+//   .section-main-content--order {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     align-content: stretch;
+//     align-items: flex-start;
+//   }
+
+//   .section-main-content--order__item {
+//     flex-wrap: wrap;
+//   }
+
+//   .section-episodes__content {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     align-content: flex-start;
+//     align-items: flex-start;
+//   }
+
+//   .section-latest-episodes {
+//     flex: 0 1 400px;
+//     align-self: auto;
+//   }
+
+//   .section-description {
+//     padding-left: 10px;
+//   }
+// }
+
+// @media screen and (min-width: 700px) {
+//   .section-main-content--order {
+//     flex-wrap: nowrap;
+//   }
+
+//   .section-main-content--order__item {
+//     order: 2;
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .section-episode-image img {
+//     width: 500px;
+//   }
+// }
