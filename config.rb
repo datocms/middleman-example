@@ -35,6 +35,11 @@ activate :pagination
 
 paginate dato.episodes.sort_by(&:first_aired).reverse, "/episodes", "/templates/episodes.html"
 
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
+
 helpers do
   def markdown(text)
     renderer = Redcarpet::Render::HTML.new
