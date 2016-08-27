@@ -12,3 +12,7 @@ bundle install
 # build Jekyll site
 bundle exec middleman build
 ```
+
+## Website preview
+
+![Website screenshot](https://raw.githubusercontent.com/datocms/jekyll-example/master/screenshot.png)
