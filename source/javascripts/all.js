@@ -1,6 +1,3 @@
-// This is where it all goes :)
-//main
-
 var previews = document.querySelectorAll(".episode-preview");
 
 var bgColors = [

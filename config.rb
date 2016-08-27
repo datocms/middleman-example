@@ -10,9 +10,9 @@ activate :directory_indexes
 
 activate :dato,
   token: '1787efad8c2b7d47c0218a6b6a035730281ea10c2d3a10f083',
-  base_url: 'http://www.the-office.com'
+  base_url: 'https://datocms-middleman-example.netlify.com'
 
-set :url_root, 'www.the-office.com'
+set :url_root, 'https://datocms-middleman-example.netlify.com'
 
 ignore "/templates/*"
 
@@ -33,7 +33,7 @@ end
 
 activate :pagination
 
-paginate dato.episodes.sort_by(&:first_aired).reverse, "/episodes", "/templates/episodes.html"
+paginate dato.episodes.sort_by(&:first_aired), "/episodes", "/templates/episodes.html"
 
 configure :build do
   activate :minify_css

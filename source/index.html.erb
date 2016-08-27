@@ -37,7 +37,7 @@
         <%= link_to "View All", "/episodes.html", class: "button" %>
       </h2>
       <div class="grid">
-        <% dato.episodes.sort_by { |e| [e.season.id.to_i, e.episode_number] }.reverse[0...6].each do |episode| %>
+        <% dato.episodes.sort_by { |e| [e.season.id.to_i, e.episode_number] }[0...6].each do |episode| %>
           <div class="grid__cell grid__cell--33">
             <%= partial "partials/episode_preview", locals: { episode: episode } %>
           </div>
