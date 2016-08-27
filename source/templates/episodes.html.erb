@@ -15,15 +15,6 @@
     <div class="grid__cell grid__cell--80">
       <section class="section">
         <h2 class="section__title">Episodes</h2>
-        <div class="pagination">
-          <% if pager.previous_page_path %>
-            <%= link_to "Previous page", pager.previous_page_path, class: "pagination__prev" %>
-          <% end %>
-
-          <% if pager.next_page_path %>
-            <%= link_to "Next page", pager.next_page_path, class: "pagination__next" %>
-          <% end %>
-        </div>
         <div class="grid">
           <% items.each do |episode| %>
             <div class="grid__cell grid__cell--50">
