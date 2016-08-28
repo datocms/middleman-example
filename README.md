@@ -9,7 +9,7 @@ To read more about the `middleman-dato` gem, please refer to [its documentation]
 ```
 # install dependencies
 bundle install
-# build Jekyll site
+# build Middleman site
 bundle exec middleman build
 ```
 
