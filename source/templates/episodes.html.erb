@@ -23,12 +23,12 @@
           <% end %>
         </div>
         <div class="pagination">
-          <% if pager.previous_page_path %>
-            <%= link_to pager.previous_page_path "Previous page", pager.previous_page_path, class: "pagination__prev" %>
+          <% if pager.previous_page %>
+            <%= link_to "Previous page", pager.page_path(pager.previous_page), class: "pagination__prev" %>
           <% end %>
 
-          <% if pager.next_page_path %>
-            <%= link_to "Next page", pager.next_page_path, class: "pagination__next" %>
+          <% if pager.next_page %>
+            <%= link_to "Next page", pager.page_path(pager.next_page), class: "pagination__next" %>
           <% end %>
         </div>
       </section>
