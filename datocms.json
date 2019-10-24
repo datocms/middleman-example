@@ -1,0 +1,8 @@
+{
+  "name": "Middleman Example",
+  "previewImage": "https://raw.githubusercontent.com/datocms/jekyll-example/master/screenshot.png",
+  "templateId": "151",
+  "deploymentType": "netlify",
+  "netlifyBuildCommand": "bundle exec middleman build",
+  "netlifyBuildDirectory": "build"
+}
