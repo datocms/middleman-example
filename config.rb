@@ -7,14 +7,8 @@ configure :development do
 end
 
 activate :directory_indexes
-
-activate :dato,
-  token: '1787efad8c2b7d47c0218a6b6a035730281ea10c2d3a10f083',
-  base_url: 'https://datocms-middleman-example.netlify.com'
-
+activate :dato
 activate :pagination
-
-set :url_root, 'https://datocms-middleman-example.netlify.com'
 
 ignore "/templates/*"
 
