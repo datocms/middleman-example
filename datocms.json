@@ -1,8 +1,9 @@
 {
-  "name": "Middleman Example",
+  "name": "Middleman example DatoCMS",
   "previewImage": "https://raw.githubusercontent.com/datocms/jekyll-example/master/screenshot.png",
   "templateId": "151",
-  "deploymentType": "netlify",
-  "netlifyBuildCommand": "bundle exec middleman build",
-  "netlifyBuildDirectory": "build"
+  "deploymentType": "static",
+  "datocmsApiTokenEnvName": "DATO_API_TOKEN",
+  "buildCommand": "bundle exec middleman build",
+  "buildDirectory": "build"
 }
