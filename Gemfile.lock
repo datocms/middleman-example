@@ -114,7 +114,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.12.2)
     multipart-post (2.1.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -166,7 +166,7 @@ DEPENDENCIES
   redcarpet
 
 RUBY VERSION
-   ruby 2.6.4p104
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
