@@ -59,7 +59,7 @@ GEM
       concurrent-ruby (~> 1.0)
     imgix (4.0.0)
     json (2.3.1)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -69,7 +69,7 @@ GEM
     middleman (4.3.11)
       coffee-script (~> 2.2)
       haml (>= 4.0.5)
-      kramdown (>= 2.3.0)
+      kramdown (>= 2.3.1)
       middleman-cli (= 4.3.11)
       middleman-core (= 4.3.11)
     middleman-cli (4.3.11)
