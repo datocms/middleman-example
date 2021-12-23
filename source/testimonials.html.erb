@@ -1,0 +1,18 @@
+<h2>Testimonials</h2>
+  <div class="row white-backfround">
+    <div class="col-12">
+      <div class="testimonial-card-container">
+        <% dato.testimonials.each do |testimonial| %>
+          <div class="testimonial-card" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(<%= image_path(testimonial.background_image) %>); border: 16px <%= testimonial.color %>; border-style: solid none;">
+            <div class="testimonial">
+              <p><strong>"</strong><%= testimonial.review %><strong>"</strong></p>
+            </div>
+            <div class="testimonial-description">
+              <h5><%= testimonial.name %></h5>
+              <p><%= testimonial.job_title %>, <%= testimonial.affiliation %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>

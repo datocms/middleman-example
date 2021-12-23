@@ -1,0 +1,24 @@
+<div class="wrapper-white">
+  <div class="row">
+    <div class="col-12">
+      <div class="main-container" id="projects" style="margin-bottom: 0;background-color: transparent; padding-bottom: 0">
+        <h2>Recent projects</h2>
+        <div class="cards">
+          <% data.projects.each do |project| %>
+            <div class="project-card">
+              <div class="image-buffer">
+                <div class="image-container" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(project.image) %>)">
+                  <p><%= project.role.capitalize %></p>
+                </div>
+              </div>
+              <div class="card-description">
+                <h5 style="background:linear-gradient(transparent 70%, <%= project.color %> 0%);"><%= project.name %></h5>
+                <p><%= project.description %></p>
+              </div>
+                <p style="text-align: right;"><%= project.date %></p>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+.two-column-container {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-gap: 16px;
+  justify-content: space-around;
+  margin-top: 24px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .two-column-container {
+    grid-template-columns: 1fr;
+  }
+  .external-link {
+    opacity: 1;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .two-column-container {
+    grid-template-columns: 1fr;
+  }
+  .external-link {
+    opacity: 1;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .two-column-container {
+    grid-template-columns: 4fr 3fr;
+  }
+  .external-link {
+    opacity: 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .two-column-container {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .two-column-container {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+
+.container-left {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.container-right {
+  display: flex;
+  margin: 0px 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container-background {
+  background-color: rgba(161, 102, 138, 0.6);
+  border-radius: 5px;
+  height: 100%;
+  min-width: 400px;
+  max-width: 475px;
+  justify-content: center;
+}

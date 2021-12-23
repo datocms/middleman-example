@@ -1,48 +1,7 @@
-<% content_for(:head) do %>
-  <%= dato_meta_tags(dato.homepage) %>
-<% end %>
-
-<div class="wrap">
-  <section class="section">
-    <h2 class="section__title">
-      Characters
-      <%= link_to "View All", "/characters/", class: "button" %>
-    </h2>
-
-    <div class="grid grid--center">
-      <% dato.characters.sort_by(&:position)[0...10].each do |character| %>
-        <div class="grid__cell grid__cell--20">
-          <%= partial "partials/character_preview", locals: { character: character } %>
-        </div>
-      <% end %>
-    </div>
-  </section>
+<%= partial 'partials/hero' %>
+<div class="main-content">
+  <%= partial 'partials/projects' %>
+  <%= partial 'partials/two-column-layout' %>
+  <%= partial 'partials/about-us' %>
 </div>
 
-<hr />
-
-<div class="wrap">
-  <section class="section">
-    <h2 class="section__title">About the serie</h2>
-    <%= markdown dato.homepage.description %>
-  </section>
-</div>
-
-<hr />
-
-<div class="wrap">
-    <section class="section">
-      <h2 class="section__title">
-        Latest episodes
-        <%= link_to "View All", "/episodes/", class: "button" %>
-      </h2>
-      <div class="grid">
-        <% dato.episodes.sort_by { |e| [e.season.id.to_i, e.episode_number] }[0...6].each do |episode| %>
-          <div class="grid__cell grid__cell--33">
-            <%= partial "partials/episode_preview", locals: { episode: episode } %>
-          </div>
-        <% end %>
-      </div>
-    </section>
-  </div>
-</div>

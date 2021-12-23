@@ -7,3 +7,4 @@
   "buildCommand": "bundle exec middleman build",
   "buildDirectory": "build"
 }
+
