@@ -1,3 +1,4 @@
+# ⛔️DEPRECATED⛔️
 # Middleman example website
 
 This repository contains a Middleman website integrated with a DatoCMS site. The site is deployed on Netlify, and can be seen at this URL: https://datocms-middleman-example.netlify.com/
